@@ -1,0 +1,17 @@
+{
+    "name": "correctWorkAdminServer",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start:prod": "node_modules/pm2/bin/pm2 start process.json",
+        "restart:prod": "node_modules/pm2/bin/pm2 restart correctWorkAdminServer",
+        "del:prod": "node_modules/pm2/bin/pm2 delete correctWorkAdminServer"
+    },
+    "dependencies": {
+        "art-template": "^4.13.2",
+        "express": "^4.17.1",
+        "express-art-template": "^1.0.1",
+        "pm2": "^4.4.0"
+    },
+    "devDependencies": {}
+}
